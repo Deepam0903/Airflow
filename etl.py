@@ -18,15 +18,15 @@ def run_etl():
 
     staging_songs_copy = ("""
             COPY song_stage FROM 's3://deepamdataengineering/songs/'
-            access_key_id 'AKIATWUYYHDCHSI4U5N4' secret_access_key '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'
+            access_key_id '' secret_access_key ''
             FORMAT AS JSON 'auto' REGION 'us-east-1'
         """)
 
     DWH_DB='testdb'
     print(DWH_DB)
-    DWH_DB_USER= 'deepam'
+    DWH_DB_USER= ''
     print(DWH_DB_USER)
-    DWH_DB_PASSWORD= 'Deepam0903'
+    DWH_DB_PASSWORD= ''
     print(DWH_DB_PASSWORD)
     DWH_PORT = '5439'
     print(DWH_PORT)
